@@ -16,31 +16,69 @@
 
   <body>
     <div class="container">
-      <div class="container" id="form-container">
-        <h3>Add a Shape!</h3>
-        <form target="_self" id="top-form">
-          <div id="rectangleDiv" class="shapesRow">
-            <button type="button" class="btn-primary" id="add-rectangle-btn">
-              Make A Rectangle
+      <div class="container" id="formContainer">
+        <h3>Add A Shape Mate!</h3>
+        <form target="_self" id="topForm">
+          <div id="recDiv" class="shapeRow">
+            <button type="button" class="btn-primary" id="addRecBtn">
+              Make a Cool Rectangle
             </button>
             <input
               type="text"
               name="height"
               class="formControl col-md"
               placeholder="heightPx"
-              id="rectangleHeight"
+              id="recHeight"
+            />
+
+            <input
+              type="text"
+              name="width"
+              class="formControl col-md"
+              placeholder="widthPx"
+              id="recWidth"
             />
           </div>
+          <div id="squareDiv" class="shapeRow">
+            <button type="button" class="btn-primary" id="addSquareBtn">
+              Add a Square Yo!
+            </button>
+            <input
+              type="text"
+              name="Side Length"
+              class="formControl col-md"
+              placeholder="sideLengthPx"
+              id="squareSide"
+            />
+           
+          </div>
+          <div id="circDiv" class="shapeRow">
+            <button type="button" class="btn-primary" id="addCircleBtn">
+              Add Round Boi
+            </button>
+            <input
+              type="text"
+              name="radius"
+              class="formControl col-md"
+              placeholder="radiusPx"
+              id="radiusLength"
+            />
+          </div>
+          <div id="triDiv" class="shapeRow">
+          <button type="button" class="btn-primary" id="addTriangleBtn">
+            Add a Nice looking Triangle
+          </button>
           <input
-            type="text"
-            name="width"
-            class="formControl col-md"
-            placeholder="widthPx"
-            id="rectangleWidth"
-          />
-          
+              type="text"
+              name="height"
+              class="formControl col-md"
+              placeholder="heightPx"
+              id="triHeight"
+            />
+        </div>
         </form>
       </div>
+
     </div>
 
     <script
