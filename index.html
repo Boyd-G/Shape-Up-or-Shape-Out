@@ -27,7 +27,7 @@
               type="text"
               name="height"
               class="formControl col-md"
-              placeholder="heightPx"
+              placeholder="Height"
               id="recHeight"
             />
 
@@ -35,7 +35,7 @@
               type="text"
               name="width"
               class="formControl col-md"
-              placeholder="widthPx"
+              placeholder="Width"
               id="recWidth"
             />
           </div>
@@ -47,10 +47,9 @@
               type="text"
               name="Side Length"
               class="formControl col-md"
-              placeholder="sideLengthPx"
+              placeholder="Side Length"
               id="squareSide"
             />
-           
           </div>
           <div id="circDiv" class="shapeRow">
             <button type="button" class="btn-primary" id="addCircleBtn">
@@ -60,27 +59,76 @@
               type="text"
               name="radius"
               class="formControl col-md"
-              placeholder="radiusPx"
+              placeholder="Radius"
               id="radiusLength"
             />
           </div>
           <div id="triDiv" class="shapeRow">
-          <button type="button" class="btn-primary" id="addTriangleBtn">
-            Add a Nice looking Triangle
-          </button>
-          <input
+            <button type="button" class="btn-primary" id="addTriangleBtn">
+              Add a Nice looking Triangle
+            </button>
+            <input
               type="text"
               name="height"
               class="formControl col-md"
-              placeholder="heightPx"
+              placeholder="Height"
               id="triHeight"
             />
-        </div>
+          </div>
         </form>
       </div>
 
+      <div class="containerRow" id="botContainer">
+        <div id="board"></div>
+        <div class="col-md ml-5" id="infoBar">
+          <div class="sideDisplayGroup">
+            <button type="button" class="btn-primary" disabled="disabled">
+              <!--disabled button so it has a nice look but no functionality-->
+              SHAPE:
+            </button>
+            <input type="text" name="shape" id="shapeSide" />
+          </div>
+          <div class="sideDisplayGroup">
+            <button type="button" class="btn-primary" disabled="disabled">
+              <!--disabled button so it has a nice look but no functionality-->
+              HEIGHT:
+            </button>
+            <input type="text" name="Height" id="heightSide" />
+          </div>
+          <div class="sideDisplayGroup">
+            <button type="button" class="btn-primary" disabled="disabled">
+              <!--disabled button so it has a nice look but no functionality-->
+              WIDTH:
+            </button>
+            <input type="text" name="width" id="widthSide" />
+            <div class="sideDisplayGroup">
+              <button type="button" class="btn-primary" disabled="disabled">
+                <!--disabled button so it has a nice look but no functionality-->
+                AREA:
+              </button>
+              <input type="text" name="area" id="areaSide" />
+            </div>
+            <div class="sideDisplayGroup">
+              <button type="text" class="btn-primary" disabled="disabled">
+                <!--disabled button so it has a nice look but no functionality-->
+                PERIMIETER:
+              </button>
+              <input type="text" name="perimeter" id="permSide" />
+            </div>
+            <div class="sideDisplayGroup">
+              <button type="button" class="btn-primary" disabled="disabled">
+                <!--disabled button so it has a nice look but no functionality-->
+                RADIUS:
+              </button>
+              <input type="text" name="radius" id="radSide" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    
+<!--SCRIPTS-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
