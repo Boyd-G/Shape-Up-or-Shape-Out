@@ -1,0 +1,38 @@
+#formContainer {
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+  
+}
+#board {
+  width: 600px;
+  height: 600px;
+  background-color: slateblue;
+  position: relative;
+}
+.shape {
+  position: absolute;
+}
+.rectangle {
+  background-color: olive;
+}
+.square {
+  background-color: maroon;
+}
+.circle {
+  background-color: plum;
+  border-radius: 50%;
+}
+#infoBar {
+  width: 300px;
+  height: 600px;
+  background-color: teal;
+  justify-content: center;
+  float: right;
+  margin-bottom: 1em;
+  
+}
+.sideDisplayGroup {
+  margin: 4em 0;
+  
+}
